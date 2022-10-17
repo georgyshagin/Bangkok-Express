@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "compress-images": "^2.0.5"
+  },
+  "dependencies": {
+    "imagemin": "^8.0.1"
+  }
+}
