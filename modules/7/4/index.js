@@ -123,8 +123,10 @@ export default class StepSlider {
       };
       
       thumb.onpointerup = () => {
-        thumb.removeEventListener('pointermove', onPointerMove);        
+        thumb.removeEventListener('pointermove', onPointerMove); 
+        this.valuePercent();       
         this.changeSliderEvent();
+        this.sliderStepActive();
         slider.classList.remove('slider_dragging');
         thumb.onpointermove = null;
         thumb.onpointerup = null;                
